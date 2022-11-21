@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section class="ingreso-todo-list">
+            <h1>Todo list</h1>
+            <form id="formulario" action="">
+                <input type="text" id="nuevaTarea" placeholder="Ingresa la tarea nueva">
+                <button type="submit">Agregar tarea</button>
+            </form>
+        </section>
+        <section class="resultado-todo-list">
+            <div class="contadores">
+                <p>Total: <span id="total"></span></p>
+                <p>Realizadas: <span id="realizadas"></span></p>
+            </div>
+
+            <div class="listado-impreso">
+                <h2>Tareas:</h2>
+                <ul id="resultado"></ul>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
