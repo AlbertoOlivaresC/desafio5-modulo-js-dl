@@ -10,12 +10,13 @@ let tareas = [
     {id: Date.now() + 3, descripcion: "Hacer el desayuno", completado: false}
 ]
 
-let totalTareas = tareas.length;
-total.innerHTML = totalTareas; //Imprimir en el span los totales
+
 
 //Imprimir el arreglo en pantalla
 const render = (array) => { //La funcion al tener un parametro se vuelve dinámica, de este modo poder reutilizarla en distintos arrays
     resultado.innerHTML = ""
+    let totalTareas = tareas.length;
+    total.innerHTML = totalTareas; //Imprimir en el span los totales
     array.forEach(tarea => {
         resultado.innerHTML += `
         <li>
@@ -71,3 +72,5 @@ resultado.addEventListener('click', (e) => {
         //render(tareasActualizadas);
     }
 })
+
+
